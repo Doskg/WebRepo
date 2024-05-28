@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block de Notas Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Call Center Notes</h1>
+        <form id="note-form">
+
+
+            <label for="title">Account #: </label>
+            <input type="text" id="accountNumber" name="account" required>
+
+            <label for="title">Account Name: </label>
+            <input type="text" id="accountName" name="accountName" required>
+
+            <label for="title">Customer Name:</label>
+            <input type="text" id="title" name="title" required>
+            
+            
+            <label for="title">Issues: </label>
+            <input type="text" id="issues" name="issues" required>
+
+            <label for="content">Summary:</label>
+            <textarea id="content" name="content" rows="10" required></textarea>
+            
+            <button type="button" onclick="addNote()">Agregar Nota</button>
+            <button type="button" onclick="copyFormData()">Copiar Datos</button>
+        </form>
+        
+        <h2>Notas</h2>
+        <div id="notes"></div>
+    </div>
+    <p>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, aperiam labore. Explicabo repellat pariatur libero, ut earum cumque itaque maiores, voluptatibus ab nemo minima similique recusandae, a quam quis reiciendis!
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque exercitationem cumque dicta sequi, deserunt nisi, dolorem delectus necessitatibus ut, totam aliquam magnam optio non saepe nam distinctio nostrum. Quam, molestiae!</p>
+    <script src="/NOTAS CALL CENTER/script.js"></script>
+</body>
+</html>
